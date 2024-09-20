@@ -1,0 +1,14 @@
+default:
+  file_path: './.data/BelagaviTemperature.csv'
+  save_file_path: './.data/processed/{filename}'
+  model_save_dir: './models'
+  location_column: 'Sulebhavi'
+  input_window_size: 168  # 24 * 7
+  output_window_size: 1
+  batch_size: 32
+  train_split: 0.8
+  shuffle: false
+  model:
+    learning_rate: 0.001
+    epochs: 20
+    lstm_units: 50
